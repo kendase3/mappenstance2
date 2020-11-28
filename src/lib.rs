@@ -3,7 +3,7 @@
 use std::fmt;
 
 pub struct Cell {
-    c: char,
+    pub c: char,
 }
 
 impl fmt::Display for Cell {
