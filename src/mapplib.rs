@@ -62,7 +62,7 @@ impl fmt::Display for Mapp {
             for cell in row {
                 write!(f, "{}", cell.c)?;
             }
-            write!(f, "\n")?;
+            writeln!(f)?;
         }
         Ok(())
     }
