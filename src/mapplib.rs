@@ -57,7 +57,13 @@ impl Default for Mapp {
 
 impl fmt::Display for Mapp {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        // iterate over rows
+        for row in &self.mapp {
+            for cell in row {
+                write!(f, "{}", cell.c)?;
+            }
+            write!(f, "\n")?;
+        }
         Ok(())
-        //write!(f, "{}", self.c)
     }
 }
