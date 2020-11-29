@@ -23,16 +23,19 @@ impl Mapp {
     fn new(width: u32, height: u32) -> Mapp {
         Mapp { width, height }
     }
-    fn default() -> Mapp {
-        Mapp {
-            width: Mapp::get_default_width(),
-            height: Mapp::get_default_height(),
-        }
-    }
     fn get_default_height() -> u32 {
         20
     }
     fn get_default_width() -> u32 {
         80
+    }
+}
+
+impl Default for Mapp {
+    fn default() -> Mapp {
+        Mapp {
+            width: Mapp::get_default_width(),
+            height: Mapp::get_default_height(),
+        }
     }
 }
