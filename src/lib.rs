@@ -1,5 +1,3 @@
-// TODO(kendall): make a mapp class that's printable etc.
-
 use std::fmt;
 
 pub struct Cell {
@@ -13,7 +11,7 @@ impl Cell {
         }
     }
     fn get_default_char() -> char {
-        '_'
+        ' '
     }
 }
 
