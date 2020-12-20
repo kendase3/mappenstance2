@@ -1,3 +1,4 @@
+use rand::{thread_rng, Rng};
 use std::fmt;
 
 pub struct Cell {
@@ -38,6 +39,11 @@ impl Mapp {
             ret.mapp.push(row);
         }
         ret
+    }
+    // TODO(kendall): finish
+    fn add_rooms(&mut self) {
+        let mut rng = thread_rng();
+        let num_rooms: u32 = rng.gen_range(2..=8);
     }
     fn get_default_height() -> u32 {
         20
