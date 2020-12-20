@@ -1,5 +1,4 @@
-use mapplib::Cell;
-use mapplib::Mapp;
+use mappenstance2::{Cell, Mapp};
 
 fn main() {
     let cell = Cell { c: 'a' };
